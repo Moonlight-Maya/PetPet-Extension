@@ -2,7 +2,7 @@
   "name": "petpet-language",
   "displayName": "PetPet Language",
   "description": "Syntax highlighting for PetPet",
-  "version": "0.0.1",
+  "version": "0.3.4",
   "engines": {
     "vscode": "^1.77.0"
   },
