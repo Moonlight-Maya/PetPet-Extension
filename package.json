@@ -1,0 +1,25 @@
+{
+  "name": "petpet-language",
+  "displayName": "PetPet Language",
+  "description": "Syntax highlighting for PetPet",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "petpet",
+      "aliases": ["PetPet", "petpet"],
+      "extensions": [".petpet"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "petpet",
+      "scopeName": "source.petpet",
+      "path": "./syntaxes/petpet.tmLanguage.json"
+    }]
+  }
+}

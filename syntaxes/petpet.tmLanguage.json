@@ -1,0 +1,64 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "PetPet",
+	"patterns": [
+		{"include": "#keywords"},
+		{"include": "#comments"},
+		{"include": "#operators"},
+		{"include": "#numeric-constants"},
+		{"include": "#constants"},
+		{"include": "#strings"}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.petpet",
+				"match": "\\b(if|else|while|return)\\b"
+			},
+			{
+				"name": "entity.name.function.petpet",
+				"match": "\\bfn\\b"
+			},
+			{
+				"name": "entity.name.type.petpet",
+				"match": "\\b(global|this)\\b"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.double-slash",
+				"match": "//.*"
+			}]
+		},
+		"operators": {
+			"patterns": [{
+				"name": "keyword.operator.petpet",
+				"match": "==|!=|>=|<=|&&|\\|\\||!(?!\\[)|[:=><+\\-*/%.]|\\b(and|or|not)\\b"
+			}]
+		},
+		"numeric-constants":{
+			"patterns": [{
+				"name": "constant.numeric.petpet",
+				"match": "\\d+(?:\\.\\d+)?"
+			}]
+		},
+		"constants":{
+			"patterns": [{
+				"name": "constant.language.petpet",
+				"match": "\\b(true|false|null)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.petpet",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.petpet",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.petpet"
+}
