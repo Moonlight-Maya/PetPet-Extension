@@ -1,5 +1,6 @@
 {
   "name": "petpet-language",
+  "publisher": "too-many-limits",
   "displayName": "PetPet Language",
   "description": "Syntax highlighting for PetPet",
   "version": "0.3.4",
@@ -10,16 +11,29 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "petpet",
-      "aliases": ["PetPet", "petpet"],
-      "extensions": [".petpet"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "petpet",
-      "scopeName": "source.petpet",
-      "path": "./syntaxes/petpet.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "petpet",
+        "aliases": [
+          "PetPet",
+          "petpet"
+        ],
+        "extensions": [
+          ".petpet"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "petpet",
+        "scopeName": "source.petpet",
+        "path": "./syntaxes/petpet.tmLanguage.json"
+      }
+    ]
+  },
+  "dependencies": {},
+  "repository": {
+    
   }
 }
