@@ -4,7 +4,9 @@
 	"patterns": [
 		{"include": "#keywords"},
 		{"include": "#comments"},
+		{"include": "#identifiers"},
 		{"include": "#operators"},
+		{"include": "#dotcolon"},
 		{"include": "#numeric-constants"},
 		{"include": "#constants"},
 		{"include": "#strings"}
@@ -30,10 +32,22 @@
 				"match": "//.*"
 			}]
 		},
+		"identifiers":{
+			"patterns": [{
+				"name": "entity.name",
+				"match": "[a-zA-Z_]\\w*"
+			}]
+		},
 		"operators": {
 			"patterns": [{
 				"name": "keyword.operator.petpet",
-				"match": "==|!=|>=|<=|&&|\\|\\||!(?!\\[)|[:=><+\\-*/%.]|\\b(and|or|not)\\b"
+				"match": "==|!=|>=|<=|&&|\\|\\||!(?!\\[)|[=><+\\-*/%]|\\b(and|or|not)\\b"
+			}]
+		},
+		"dotcolon": {
+			"patterns": [{
+				"name": "keyword.operator.petpet.dot",
+				"match": "[.:]"
 			}]
 		},
 		"numeric-constants":{
