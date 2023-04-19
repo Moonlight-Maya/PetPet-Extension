@@ -3,7 +3,7 @@
   "publisher": "too-many-limits",
   "displayName": "PetPet Language",
   "description": "Syntax highlighting for PetPet",
-  "version": "0.3.4a",
+  "version": "0.3.400",
   "engines": {
     "vscode": "^1.77.0"
   },
