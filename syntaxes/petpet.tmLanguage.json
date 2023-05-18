@@ -4,12 +4,12 @@
 	"patterns": [
 		{"include": "#keywords"},
 		{"include": "#comments"},
-		{"include": "#identifiers"},
 		{"include": "#operators"},
 		{"include": "#dotcolon"},
 		{"include": "#numeric-constants"},
 		{"include": "#constants"},
-		{"include": "#strings"}
+		{"include": "#strings"},
+		{"include": "#identifiers"}
 	],
 	"repository": {
 		"keywords": {
